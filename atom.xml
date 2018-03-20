@@ -2,13 +2,23 @@
   <title>烧饼博客</title>
   <link href="https://sb.sb/feed/atom.xml" rel="self"/>
   <link href="https://sb.sb/"/>
-  <updated>2018-03-19T23:02:58+08:00</updated>
+  <updated>2018-03-20T15:20:57+08:00</updated>
   <id>https://sb.sb/</id>
   <author>
     <name>Showfom</name>
     <email>sb@sb.sb</email>
   </author>
   <generator>Hugo -- gohugo.io</generator>
+  <entry>
+	<title>Linux 下使用 acme.sh 配置 Let&#39;s Encrypt 免费 SSL 证书 &#43; 通配符证书</title>
+    <link href="https://sb.sb/blog/linux-acme-sh-lets-encrypt-ssl/"/>
+    <id>https://sb.sb/blog/linux-acme-sh-lets-encrypt-ssl/</id>
+    <published>2018-03-20T15:20:57+08:00</published>
+    <updated>2018-03-20T15:20:57+08:00</updated>
+	<content type="html"><![CDATA[1、什么是 SSL 证书？ SSL 是保护用户数据和防止身份被盗用的最佳方式。拥有 SSL 证书的网站可以告诉用户，他们可以放心的浏览，SSL 可以保护他们的数据安全。不同的 SSL 证书提供不同级别的验证。了解更多 &gt;
+目前比较火的适合个人用户的证书就是 Let&rsquo;s Encrypt，这货是免费的，下面我们就介绍一下如何在 Linux 服务器上配置 SSL 证书
+2、使用 acme.]]></content>
+  </entry>
   <entry>
 	<title>使用 Hugo 生成静态博客教程</title>
     <link href="https://sb.sb/blog/migrate-to-hugo/"/>
