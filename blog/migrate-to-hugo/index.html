@@ -71,7 +71,11 @@ $ git init
 $ git remote add origin https://github.com/Showfom/showfom.github.io.git
 $ git add -A
 $ git commit -m <span class="s2">&#34;first commit&#34;</span>
-$ git push -u origin master</code></pre></div><p>关于 Git 的使用说明，可以参考网络上的一大堆教程，这里不再重复。</p><p class="page-meta"><em></em></p></article></div></div></div></section><footer class="footer"><div class="container content"><div class="has-text-centered"><p><span class="has-text-weight-bold">烧饼-<span class="has-text-danger">博客</span></span> An open source theme by <a href="https://mikewatkins.ca/">Mike Watkins</a> and modified by <a href="https://sb.sb/">Showfom</a></p></div></div></footer><script src="/blog.js" async defer="defer"></script><script type="application/ld+json">{ 
+$ git push -u origin master</code></pre></div><p>之后更新文章并生成好静态页面以后，就可以使用 Git push 来同步了</p><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> public
+$ git add .
+$ git status
+$ git commit -m <span class="s2">&#34;add blog post&#34;</span>
+$ git push</code></pre></div><p>关于 Git 的使用说明，可以参考网络上的一大堆教程，这里不再重复。</p><p class="page-meta"><em></em></p></article></div></div></div></section><script src="/js/toc.js" async defer="defer"></script><footer class="footer"><div class="container content"><div class="has-text-centered"><p><span class="has-text-weight-bold">烧饼-<span class="has-text-danger">博客</span></span> An open source theme by <a href="https://mikewatkins.ca/">Mike Watkins</a> and modified by <a href="https://sb.sb/">Showfom</a></p></div></div></footer><script type="application/ld+json">{ 
 	"@context": "http://schema.org", 
 	"@type": "WebPage",
 	"@id": "https://sb.sb/blog/migrate-to-hugo/",
