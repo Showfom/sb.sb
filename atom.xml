@@ -44,7 +44,7 @@ Debian 9.x 下
 apt-get update &amp;&amp; apt-get upgrade apt-get -t stretch-backports update &amp;&amp; apt-get -t stretch-backports upgrade Ubuntu 16.]]></content>
   </entry>
   <entry>
-	<title>Debia 使用 gdnsd 自建 DNS 服务并分区解析</title>
+	<title>Debian 使用 gdnsd 自建 DNS 服务并分区解析</title>
     <link href="https://sb.sb/blog/debian-install-gdnsd/"/>
     <id>https://sb.sb/blog/debian-install-gdnsd/</id>
     <published>2018-03-19T22:33:47+08:00</published>

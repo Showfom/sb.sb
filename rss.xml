@@ -52,7 +52,7 @@ apt-get update &amp;amp;&amp;amp; apt-get upgrade apt-get -t stretch-backports u
     </item>
     
     <item>
-      <title>Debia 使用 gdnsd 自建 DNS 服务并分区解析</title>
+      <title>Debian 使用 gdnsd 自建 DNS 服务并分区解析</title>
       <link>https://sb.sb/blog/debian-install-gdnsd/</link>
       <pubDate>Mon, 19 Mar 2018 22:33:47 +0800</pubDate>
       <author>sb@sb.sb (Showfom)</author>
