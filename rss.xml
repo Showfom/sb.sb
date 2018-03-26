@@ -9,10 +9,20 @@
     <managingEditor>sb@sb.sb (Showfom)</managingEditor>
     <webMaster>sb@sb.sb (Showfom)</webMaster>
     <copyright>&amp;copy; Showfom</copyright>
-    <lastBuildDate>Tue, 20 Mar 2018 15:20:57 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 Mar 2018 19:55:34 +0800</lastBuildDate>
     
 	<atom:link href="https://sb.sb/rss.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux 下使用 acme.sh 和 NS 代管申请 Let&#39;s Encrypt 免费通配符证书</title>
+      <link>https://sb.sb/blog/linux-lets-encrypt-wildcard-ssl/</link>
+      <pubDate>Mon, 26 Mar 2018 19:55:34 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/linux-lets-encrypt-wildcard-ssl/</guid>
+      <description>作者： @msg7086
+1、简介 在《Linux 下使用 acme.sh 配置 Let&amp;rsquo;s Encrypt 免费 SSL 证书 + 通配符证书》一文中，我们介绍了如何使用 acme.sh 生成 Let&amp;rsquo;s Encrypt 通配符证书，而 DNS 认证签发证书一直是一个麻烦事。例如需要将 API Key 甚至是账号密码与签发脚本保存在一起，会有潜在的安全隐患；有些 DNS 服务商不提供 API，只能每三个月手工修改等等。</description>
+    </item>
     
     <item>
       <title>Linux 下使用 acme.sh 配置 Let&#39;s Encrypt 免费 SSL 证书 &#43; 通配符证书</title>
