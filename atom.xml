@@ -2,13 +2,23 @@
   <title>烧饼博客</title>
   <link href="https://sb.sb/feed/atom.xml" rel="self"/>
   <link href="https://sb.sb/"/>
-  <updated>2018-03-26T19:55:34+08:00</updated>
+  <updated>2018-03-28T01:56:33+08:00</updated>
   <id>https://sb.sb/</id>
   <author>
     <name>Showfom</name>
     <email>sb@sb.sb</email>
   </author>
   <generator>Hugo -- gohugo.io</generator>
+  <entry>
+	<title>Debian 9 安装 rTorrent &#43; ruTorrent &#43; Nginx 搭建自己的 PT / BT 盒子</title>
+    <link href="https://sb.sb/blog/debian-install-rtorrent-rutorrent-nginx/"/>
+    <id>https://sb.sb/blog/debian-install-rtorrent-rutorrent-nginx/</id>
+    <published>2018-03-28T01:56:33+08:00</published>
+    <updated>2018-03-28T01:56:33+08:00</updated>
+	<content type="html"><![CDATA[在阅读本文前，请先了解什么是 Private Tracker (简称 PT)
+ Private Tracker，简称 PT，即私用种子服务器。Private Tracker 可以统计用户的上传和下载量，计算用户的分享率。你可以简单将它理解为 BT 的升级版，在拥有 BT 所有功能的同时，需要达到一定的分享率才能不被删除帐号。PT 下载其实也是 BT 下载的一种，但有两个明显的改进：一是私密的小范围下载，二是进行流量统计，根据上载量决定你的权限。
+ 相关介绍请摸这儿、这儿、这儿]]></content>
+  </entry>
   <entry>
 	<title>Linux 下使用 acme.sh 和 NS 代管申请 Let&#39;s Encrypt 免费通配符证书</title>
     <link href="https://sb.sb/blog/linux-lets-encrypt-wildcard-ssl/"/>
