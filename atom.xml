@@ -2,13 +2,22 @@
   <title>烧饼博客</title>
   <link href="https://sb.sb/feed/atom.xml" rel="self"/>
   <link href="https://sb.sb/"/>
-  <updated>2018-03-28T01:56:33+08:00</updated>
+  <updated>2018-04-01T17:05:30+08:00</updated>
   <id>https://sb.sb/</id>
   <author>
     <name>Showfom</name>
     <email>sb@sb.sb</email>
   </author>
   <generator>Hugo -- gohugo.io</generator>
+  <entry>
+	<title>我们做出了一个艰难的决定</title>
+    <link href="https://sb.sb/blog/april-fools-2018/"/>
+    <id>https://sb.sb/blog/april-fools-2018/</id>
+    <published>2018-04-01T17:05:30+08:00</published>
+    <updated>2018-04-01T17:05:30+08:00</updated>
+	<content type="html"><![CDATA[由于烧饼博客经营不善，博主带着小姨子跑路了，整个组织濒临破产边缘。经第一届金枪鱼全体代表大会讨论研究决定，烧饼博客名下的 Telegram 群组站将启用免费使用+付费增值模式。具体收费标准如下：
+   项目 普通用户 青铜会员 白银会员 黄金会员 铂金会员 钻石会员 大师会员 王者 备注     收费标准 免费 $9/mo $19/mo $29/mo $39/mo $49/mo $59/mo $99/mo n/a   Telegram 发言 5 条/周 10 条/周 15 条/周 20 条/周 25 条/周 30 条/周 35 条/周 无限条/周 除王者外超出部分 $1/条   Telegram 发言置顶 无 1 条/月 2 条/月 3 条/月 4 条/月 5 条/月 10 条/月 无限条/月 除王者外超出部分 $10/条   其他特权 无 无 无 无 无 Telegram 群红名 上线提醒 享受管理员特权 n/a    此标准发布即日起不执行，本文修改并抄袭自 Tuna]]></content>
+  </entry>
   <entry>
 	<title>Debian 9 安装 rTorrent &#43; ruTorrent &#43; Nginx 搭建自己的 PT / BT 盒子</title>
     <link href="https://sb.sb/blog/debian-install-rtorrent-rutorrent-nginx/"/>
