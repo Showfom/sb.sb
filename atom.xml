@@ -2,13 +2,22 @@
   <title>烧饼博客</title>
   <link href="https://sb.sb/feed/atom.xml" rel="self"/>
   <link href="https://sb.sb/"/>
-  <updated>2018-04-01T17:05:30+08:00</updated>
+  <updated>2018-04-04T22:17:06+08:00</updated>
   <id>https://sb.sb/</id>
   <author>
     <name>Showfom</name>
     <email>sb@sb.sb</email>
   </author>
   <generator>Hugo -- gohugo.io</generator>
+  <entry>
+	<title>Debian 9 安装 LEMP &#43; WHMCS 7.5 教程</title>
+    <link href="https://sb.sb/blog/debian-install-whmcs/"/>
+    <id>https://sb.sb/blog/debian-install-whmcs/</id>
+    <published>2018-04-04T22:17:06+08:00</published>
+    <updated>2018-04-04T22:17:06+08:00</updated>
+	<content type="html"><![CDATA[WHMCS 7.5 终于发布了，这货开始支持 PHP 7.2，这里就写个简单的教程记录一下安装方式
+1、准备工作 首先，按照《Debian 9 / Debian 8 使用源安装 LEMP 教程》安装好 LEMP 环境，可以选一些需要用到的 PHP 7.2 软件包]]></content>
+  </entry>
   <entry>
 	<title>我们做出了一个艰难的决定</title>
     <link href="https://sb.sb/blog/april-fools-2018/"/>
