@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Centos on 烧饼博客</title>
+    <link>https://sb.sb/tags/centos/</link>
+    <description>Recent content in Centos on 烧饼博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <managingEditor>sb@sb.sb (Showfom)</managingEditor>
+    <webMaster>sb@sb.sb (Showfom)</webMaster>
+    <copyright>&amp;copy; Showfom</copyright>
+    <lastBuildDate>Mon, 19 Mar 2018 21:56:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://sb.sb/tags/centos/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS / RHEL 7 升级 OpenSSL 教程</title>
+      <link>https://sb.sb/blog/centos-upgrade-openssl/</link>
+      <pubDate>Mon, 19 Mar 2018 21:56:44 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/centos-upgrade-openssl/</guid>
+      <description>CentOS 7.x 的 OpenSSL 软件版本实在是低，2017 年了还在用人家 2013 年的版本，而且 1.0.1 版本对 ALPN 不支持，已经没法跟上大环境的节奏了
+可以看一下默认自带的版本
+[root@centos]# openssl version OpenSSL 1.0.1e-fips 11 Feb 2013 所以我们有必要升级 CentOS 7.</description>
+    </item>
+    
+    <item>
+      <title>CentOS / RHEL 7 使用 EPEL 安装 LEMP 教程</title>
+      <link>https://sb.sb/blog/centos-install-nginx-php-mysql/</link>
+      <pubDate>Mon, 19 Mar 2018 21:52:47 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/centos-install-nginx-php-mysql/</guid>
+      <description>CentOS 是 RHEL (Red Hat Enterprise Linux) 的免费版，由于红帽的大力推广，在国内外很是流行。因为众多企业和开发者使用，首先要求的是保证稳定，所以 CentOS 下的软件从不追求最新版本。
+而很多时候我们不得不用到最新的版本进行一些操作，本文就介绍在 CentOS / RHEL 7.x 下使用 EPEL 以及官网仓库安装最新版本的 LEMP</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nginx on 烧饼博客</title>
+    <link>https://sb.sb/tags/nginx/</link>
+    <description>Recent content in Nginx on 烧饼博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <managingEditor>sb@sb.sb (Showfom)</managingEditor>
+    <webMaster>sb@sb.sb (Showfom)</webMaster>
+    <copyright>&amp;copy; Showfom</copyright>
+    <lastBuildDate>Wed, 28 Mar 2018 01:56:33 +0800</lastBuildDate>
+    
+	<atom:link href="https://sb.sb/tags/nginx/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debian 9 安装 rTorrent &#43; ruTorrent &#43; Nginx 搭建自己的 PT / BT 盒子</title>
+      <link>https://sb.sb/blog/debian-install-rtorrent-rutorrent-nginx/</link>
+      <pubDate>Wed, 28 Mar 2018 01:56:33 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/debian-install-rtorrent-rutorrent-nginx/</guid>
+      <description>在阅读本文前，请先了解什么是 Private Tracker (简称 PT)
+ Private Tracker，简称 PT，即私用种子服务器。Private Tracker 可以统计用户的上传和下载量，计算用户的分享率。你可以简单将它理解为 BT 的升级版，在拥有 BT 所有功能的同时，需要达到一定的分享率才能不被删除帐号。PT 下载其实也是 BT 下载的一种，但有两个明显的改进：一是私密的小范围下载，二是进行流量统计，根据上载量决定你的权限。
+ 相关介绍请摸这儿、这儿、这儿</description>
+    </item>
+    
+    <item>
+      <title>Linux 下使用 acme.sh 和 NS 代管申请 Let&#39;s Encrypt 免费通配符证书</title>
+      <link>https://sb.sb/blog/linux-lets-encrypt-wildcard-ssl/</link>
+      <pubDate>Mon, 26 Mar 2018 19:55:34 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/linux-lets-encrypt-wildcard-ssl/</guid>
+      <description>作者： @msg7086
+1、简介 在《Linux 下使用 acme.sh 配置 Let&amp;rsquo;s Encrypt 免费 SSL 证书 + 通配符证书》一文中，我们介绍了如何使用 acme.sh 生成 Let&amp;rsquo;s Encrypt 通配符证书，而 DNS 认证签发证书一直是一个麻烦事。例如需要将 API Key 甚至是账号密码与签发脚本保存在一起，会有潜在的安全隐患；有些 DNS 服务商不提供 API，只能每三个月手工修改等等。</description>
+    </item>
+    
+    <item>
+      <title>Linux 下使用 acme.sh 配置 Let&#39;s Encrypt 免费 SSL 证书 &#43; 通配符证书</title>
+      <link>https://sb.sb/blog/linux-acme-sh-lets-encrypt-ssl/</link>
+      <pubDate>Tue, 20 Mar 2018 15:20:57 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/linux-acme-sh-lets-encrypt-ssl/</guid>
+      <description>1、什么是 SSL 证书？ SSL 是保护用户数据和防止身份被盗用的最佳方式。拥有 SSL 证书的网站可以告诉用户，他们可以放心的浏览，SSL 可以保护他们的数据安全。不同的 SSL 证书提供不同级别的验证。了解更多 &amp;gt;
+目前比较火的适合个人用户的证书就是 Let&amp;rsquo;s Encrypt，这货是免费的，下面我们就介绍一下如何在 Linux 服务器上配置 SSL 证书
+2、使用 acme.</description>
+    </item>
+    
+    <item>
+      <title>Linux 下编译安装最新版本 Nginx</title>
+      <link>https://sb.sb/blog/linux-install-nginx/</link>
+      <pubDate>Mon, 19 Mar 2018 22:26:34 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/linux-install-nginx/</guid>
+      <description>之前介绍过《CentOS / RHEL 7.x 使用 EPEL 安装最新版本 LEMP / LNMP》，其中有两种使用源安装的方法，但是无论是 EPEL 方式或 Nginx 官方源方式，自带的 OpenSSL 版本实在过低，所以本文介绍如何在 CentOS 7.x / RHEL 7.</description>
+    </item>
+    
+    <item>
+      <title>CentOS / RHEL 7 使用 EPEL 安装 LEMP 教程</title>
+      <link>https://sb.sb/blog/centos-install-nginx-php-mysql/</link>
+      <pubDate>Mon, 19 Mar 2018 21:52:47 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/centos-install-nginx-php-mysql/</guid>
+      <description>CentOS 是 RHEL (Red Hat Enterprise Linux) 的免费版，由于红帽的大力推广，在国内外很是流行。因为众多企业和开发者使用，首先要求的是保证稳定，所以 CentOS 下的软件从不追求最新版本。
+而很多时候我们不得不用到最新的版本进行一些操作，本文就介绍在 CentOS / RHEL 7.x 下使用 EPEL 以及官网仓库安装最新版本的 LEMP</description>
+    </item>
+    
+    <item>
+      <title>Debian 9 / Debian 8 使用源安装 LEMP 教程</title>
+      <link>https://sb.sb/blog/debian-install-nginx-php-mysql/</link>
+      <pubDate>Mon, 19 Mar 2018 21:18:51 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/debian-install-nginx-php-mysql/</guid>
+      <description>Debian 9 代号 Stretch 在 2017 年 6 月 18 号正式发布，由于是最新的系统，原来基于 Dotdeb 安装最新 LEMP 的教程已经过时，本文将介绍使用官方源和第三方源在 Debian 9.x Stretch 安装最新版 LEMP 的教程，并且可以自行选择 PHP 版本。</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 16.04 / Ubuntu 14.04 使用源安装 LEMP 教程</title>
+      <link>https://sb.sb/blog/ubuntu-install-nginx-php-mysql/</link>
+      <pubDate>Mon, 19 Mar 2018 21:11:31 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/ubuntu-install-nginx-php-mysql/</guid>
+      <description>LEMP 指的是 Linux + Nginx (发音 engine x 所以这里是 E 而不是 N) + MySQL + PHP 的简称，国内有些地方叫做 LNMP (因为 LNMP 没法读出来，而 LEMP 可以直接发音，所以今后本站教程一律都会写 LEMP)</description>
+    </item>
+    
+  </channel>
+</rss>

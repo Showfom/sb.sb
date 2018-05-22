@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Isso on 烧饼博客</title>
+    <link>https://sb.sb/tags/isso/</link>
+    <description>Recent content in Isso on 烧饼博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <managingEditor>sb@sb.sb (Showfom)</managingEditor>
+    <webMaster>sb@sb.sb (Showfom)</webMaster>
+    <copyright>&amp;copy; Showfom</copyright>
+    <lastBuildDate>Mon, 19 Mar 2018 22:55:31 +0800</lastBuildDate>
+    
+	<atom:link href="https://sb.sb/tags/isso/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debian / Ubuntu 搭建 Isso 评论系统教程</title>
+      <link>https://sb.sb/blog/debian-ubuntu-install-isso/</link>
+      <pubDate>Mon, 19 Mar 2018 22:55:31 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/debian-ubuntu-install-isso/</guid>
+      <description>由于某说要关闭，某言对 HTTPS 支持不友好，某易必须登陆才可以且在国外访问卡出翔，剩下国产的服务都一般，而国外服务 Disqus 是个不存在的网站并且会加载一大堆追踪的 JS，对于有洁癖的博主来说，全世界第三方评论系统基本没有一个好用，所以我们可以考虑自己搭建 Isso 评论系统
+Isso 是基于 Python 写的一套评论系统，用途就是代替以上说的第三方不靠谱平台，而官网的教程坑很多，新手没有接触过运维工作安装起来难度较大，所以我就整理一下基本的教程，尽量可以让所有用户都能自行搭建评论系统
+本文所有操作均在 root 用户下进行，请自行切换
+首先，更新系统
+apt-get update &amp;amp;&amp;amp; apt-get upgrade 如果您用的 Debian 9.</description>
+    </item>
+    
+  </channel>
+</rss>

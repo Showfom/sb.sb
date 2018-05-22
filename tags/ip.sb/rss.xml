@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ip.sb on 烧饼博客</title>
+    <link>https://sb.sb/tags/ip.sb/</link>
+    <description>Recent content in Ip.sb on 烧饼博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <managingEditor>sb@sb.sb (Showfom)</managingEditor>
+    <webMaster>sb@sb.sb (Showfom)</webMaster>
+    <copyright>&amp;copy; Showfom</copyright>
+    <lastBuildDate>Mon, 19 Mar 2018 22:31:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://sb.sb/tags/ip.sb/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IP.SB - 在线 IPv4 / IPv6 信息查询</title>
+      <link>https://sb.sb/blog/ip-sb/</link>
+      <pubDate>Mon, 19 Mar 2018 22:31:10 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/ip-sb/</guid>
+      <description>1、IP.SB 的由来 IP.SB 前身是 IP.GS ，一个专门用于查询本地出口 IP 的网站，初衷是为了让用户更方便地知道自己的本地出口 IP，使用的数据库是 IPIP.NET 提供的商业版
+随着访问量增加，并且全世界 IPv6 渐渐普及，我们发现仅仅使用 IPIP.NET 的数据库已经无法满足需求，比如他们没有提供 IPv6 数据库，而国外的 Maxmind 的 IPv4 数据库准确性又没有 IPIP.</description>
+    </item>
+    
+  </channel>
+</rss>

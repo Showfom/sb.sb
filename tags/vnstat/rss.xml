@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vnstat on 烧饼博客</title>
+    <link>https://sb.sb/tags/vnstat/</link>
+    <description>Recent content in Vnstat on 烧饼博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <managingEditor>sb@sb.sb (Showfom)</managingEditor>
+    <webMaster>sb@sb.sb (Showfom)</webMaster>
+    <copyright>&amp;copy; Showfom</copyright>
+    <lastBuildDate>Mon, 19 Mar 2018 22:05:51 +0800</lastBuildDate>
+    
+	<atom:link href="https://sb.sb/tags/vnstat/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debian 9 / Debian 8 安装 vnStat 统计服务器流量</title>
+      <link>https://sb.sb/blog/debian-install-vnstat/</link>
+      <pubDate>Mon, 19 Mar 2018 22:05:51 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/debian-install-vnstat/</guid>
+      <description>vnStat 是一款开源的 Linux 下统计网卡流量的软件，可以很方便地查看当前、当天、当月的流量统计报告，下面我们介绍下在 Debian 9.x 下安装 vnstat 的简单方法，本文同样适用于 Debian 8.x
+首先，使用 ip a 命令查看你机器的网卡名称，如果是全新的 iso 安装的 Debian 9，那么默认的网卡名称应该为 ens3 或 ens4</description>
+    </item>
+    
+  </channel>
+</rss>

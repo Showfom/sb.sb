@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gdnsd on 烧饼博客</title>
+    <link>https://sb.sb/tags/gdnsd/</link>
+    <description>Recent content in Gdnsd on 烧饼博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <managingEditor>sb@sb.sb (Showfom)</managingEditor>
+    <webMaster>sb@sb.sb (Showfom)</webMaster>
+    <copyright>&amp;copy; Showfom</copyright>
+    <lastBuildDate>Mon, 19 Mar 2018 22:33:47 +0800</lastBuildDate>
+    
+	<atom:link href="https://sb.sb/tags/gdnsd/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debian 使用 gdnsd 自建 DNS 服务并分区解析</title>
+      <link>https://sb.sb/blog/debian-install-gdnsd/</link>
+      <pubDate>Mon, 19 Mar 2018 22:33:47 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/debian-install-gdnsd/</guid>
+      <description>gdnsd 是一款权威 DNS (Authoritative-only DNS)服务器软件，因为自带 GeoIP 插件，所以很适合自建 CDN 做分区解析，著名的喂鸡百科就是使用 gdnsd 进行全球 CDN 分区解析
+众所周知，天朝的网络环境，国内访问国外慢，同理国外访问国内也慢，所以我们很有必要搭建 CDN 并且使用 DNS 进行分区解析
+而国内比较知名的权威 DNS 服务商如 CloudXNS, DNSpod 他们免费版的 DNS 服务器都在国内，这样会造成国外的用户解析你的域名很慢，同理，如果使用国外的权威 DNS 服务商如 Cloudflare, AWS Route53 他们的 DNS 服务器都部属在国外，国内访问基本要走美国节点，这样会造成国内的用户解析你的域名很慢</description>
+    </item>
+    
+  </channel>
+</rss>

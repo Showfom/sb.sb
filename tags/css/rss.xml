@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Css on 烧饼博客</title>
+    <link>https://sb.sb/tags/css/</link>
+    <description>Recent content in Css on 烧饼博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <managingEditor>sb@sb.sb (Showfom)</managingEditor>
+    <webMaster>sb@sb.sb (Showfom)</webMaster>
+    <copyright>&amp;copy; Showfom</copyright>
+    <lastBuildDate>Mon, 19 Mar 2018 22:32:23 +0800</lastBuildDate>
+    
+	<atom:link href="https://sb.sb/tags/css/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>前端 CDNJS 库及 Google Fonts、Ajax 和 Gravatar 国内加速服务</title>
+      <link>https://sb.sb/blog/css-cdn/</link>
+      <pubDate>Mon, 19 Mar 2018 22:32:23 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/css-cdn/</guid>
+      <description>由于某些众所周知的原因，好多开源的 JS 库采用的国外 CDN 托管方式在国内访问速度不如人意。所以我们特意制作了这个公益项目，托管了 CDNJS 的所有开源 JS 库以及反代了 Google Fonts、Ajax 和 Gravatar，并且全部支持 http 和 https
+1、CDNJS 开源 JS 库 我们采用的方法是每天定时同步 CDNJS 的 Github</description>
+    </item>
+    
+  </channel>
+</rss>

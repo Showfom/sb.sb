@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 烧饼博客</title>
+    <link>https://sb.sb/categories/</link>
+    <description>Recent content in Categories on 烧饼博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <managingEditor>sb@sb.sb (Showfom)</managingEditor>
+    <webMaster>sb@sb.sb (Showfom)</webMaster>
+    <copyright>&amp;copy; Showfom</copyright>
+    
+	<atom:link href="https://sb.sb/categories/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

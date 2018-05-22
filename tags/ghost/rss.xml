@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ghost on 烧饼博客</title>
+    <link>https://sb.sb/tags/ghost/</link>
+    <description>Recent content in Ghost on 烧饼博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <managingEditor>sb@sb.sb (Showfom)</managingEditor>
+    <webMaster>sb@sb.sb (Showfom)</webMaster>
+    <copyright>&amp;copy; Showfom</copyright>
+    <lastBuildDate>Mon, 19 Mar 2018 23:02:58 +0800</lastBuildDate>
+    
+	<atom:link href="https://sb.sb/tags/ghost/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用 Hugo 生成静态博客教程</title>
+      <link>https://sb.sb/blog/migrate-to-hugo/</link>
+      <pubDate>Mon, 19 Mar 2018 23:02:58 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/migrate-to-hugo/</guid>
+      <description>由于 Ghost 这个博客系统依赖 Nodejs，并且这货更新实在是太频繁，隔几天就得去服务器上 ghost update 一次，并不是很适合正式环境使用
+并且由于国内众所周知的政策原因，本站域名 sb.sb 已主动申请注销备案，趁着服务器迁移到海外的功夫，顺便我就把烧饼博客更换成了 Hugo，以下为 Hugo 安装和使用教程
+Hugo 是一款开源的使用 go 语言写的静态网站生成器，很适合数据量不大的个人博客使用
+1、安装 Hugo 使用 Go 语言开发编译后的二进制文件并不需要任何依赖，直接在官方 Github 上下载最新的文件后解压即可运行，参考官网的安装教程</description>
+    </item>
+    
+    <item>
+      <title>Debian 9 / Ubuntu 16.04 搭建 Ghost 1.x 教程</title>
+      <link>https://sb.sb/blog/debian-ubuntu-install-upgrade-ghost/</link>
+      <pubDate>Mon, 19 Mar 2018 22:51:30 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/debian-ubuntu-install-upgrade-ghost/</guid>
+      <description>PS：强烈不推荐使用这个博客系统
+1、更新系统并安装必要软件 这个就不需要我多讲了，首先用 root 用户登陆系统，如果不是的话先切换到 root
+Debian 9.x 下
+apt-get update &amp;amp;&amp;amp; apt-get upgrade apt-get -t stretch-backports update &amp;amp;&amp;amp; apt-get -t stretch-backports upgrade Ubuntu 16.</description>
+    </item>
+    
+  </channel>
+</rss>

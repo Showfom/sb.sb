@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Openssl on 烧饼博客</title>
+    <link>https://sb.sb/tags/openssl/</link>
+    <description>Recent content in Openssl on 烧饼博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <managingEditor>sb@sb.sb (Showfom)</managingEditor>
+    <webMaster>sb@sb.sb (Showfom)</webMaster>
+    <copyright>&amp;copy; Showfom</copyright>
+    <lastBuildDate>Mon, 19 Mar 2018 21:56:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://sb.sb/tags/openssl/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS / RHEL 7 升级 OpenSSL 教程</title>
+      <link>https://sb.sb/blog/centos-upgrade-openssl/</link>
+      <pubDate>Mon, 19 Mar 2018 21:56:44 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/centos-upgrade-openssl/</guid>
+      <description>CentOS 7.x 的 OpenSSL 软件版本实在是低，2017 年了还在用人家 2013 年的版本，而且 1.0.1 版本对 ALPN 不支持，已经没法跟上大环境的节奏了
+可以看一下默认自带的版本
+[root@centos]# openssl version OpenSSL 1.0.1e-fips 11 Feb 2013 所以我们有必要升级 CentOS 7.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apache on 烧饼博客</title>
+    <link>https://sb.sb/tags/apache/</link>
+    <description>Recent content in Apache on 烧饼博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <managingEditor>sb@sb.sb (Showfom)</managingEditor>
+    <webMaster>sb@sb.sb (Showfom)</webMaster>
+    <copyright>&amp;copy; Showfom</copyright>
+    <lastBuildDate>Mon, 26 Mar 2018 19:55:34 +0800</lastBuildDate>
+    
+	<atom:link href="https://sb.sb/tags/apache/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux 下使用 acme.sh 和 NS 代管申请 Let&#39;s Encrypt 免费通配符证书</title>
+      <link>https://sb.sb/blog/linux-lets-encrypt-wildcard-ssl/</link>
+      <pubDate>Mon, 26 Mar 2018 19:55:34 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/linux-lets-encrypt-wildcard-ssl/</guid>
+      <description>作者： @msg7086
+1、简介 在《Linux 下使用 acme.sh 配置 Let&amp;rsquo;s Encrypt 免费 SSL 证书 + 通配符证书》一文中，我们介绍了如何使用 acme.sh 生成 Let&amp;rsquo;s Encrypt 通配符证书，而 DNS 认证签发证书一直是一个麻烦事。例如需要将 API Key 甚至是账号密码与签发脚本保存在一起，会有潜在的安全隐患；有些 DNS 服务商不提供 API，只能每三个月手工修改等等。</description>
+    </item>
+    
+    <item>
+      <title>Linux 下使用 acme.sh 配置 Let&#39;s Encrypt 免费 SSL 证书 &#43; 通配符证书</title>
+      <link>https://sb.sb/blog/linux-acme-sh-lets-encrypt-ssl/</link>
+      <pubDate>Tue, 20 Mar 2018 15:20:57 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/linux-acme-sh-lets-encrypt-ssl/</guid>
+      <description>1、什么是 SSL 证书？ SSL 是保护用户数据和防止身份被盗用的最佳方式。拥有 SSL 证书的网站可以告诉用户，他们可以放心的浏览，SSL 可以保护他们的数据安全。不同的 SSL 证书提供不同级别的验证。了解更多 &amp;gt;
+目前比较火的适合个人用户的证书就是 Let&amp;rsquo;s Encrypt，这货是免费的，下面我们就介绍一下如何在 Linux 服务器上配置 SSL 证书
+2、使用 acme.</description>
+    </item>
+    
+  </channel>
+</rss>

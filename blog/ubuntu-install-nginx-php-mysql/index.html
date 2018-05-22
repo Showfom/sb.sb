@@ -26,61 +26,61 @@ sudo apt-get update</code></pre></div><p>如有 PHP 7.1.x 或 PHP 7.0.x 或 PHP 
 </span><span class="s">}
 </span><span class="s">EOF</span></code></pre></div><p>然后重启 Nginx</p><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo nginx -t <span class="o">&amp;&amp;</span> sudo service nginx restart</code></pre></div><p>我们的目录在 <code>/var/www/example.com</code>， 创建一个 <code>phpinfo.php</code> 并输入 <code>phpinfo()</code> 函数</p><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo cat &gt;&gt; /var/www/example.com/phpinfo.php <span class="s">&lt;&lt; EOF
 </span><span class="s">&lt;?php phpinfo(); ?&gt;
-</span><span class="s">EOF</span></code></pre></div><p>好了，此时在浏览器输入 <code>&lt;code&gt;</code><a href="http://example.com/phpinfo.php`，如果看到经典的">http://example.com/phpinfo.php`，如果看到经典的</a> phpinfo 页面则说明安装成功，如果不成功，请仔细对比步骤查找哪里出错</p><h2 id="4-安装-mysql-5-7-x">4、安装 MySQL 5.7.x</h2><p>经过多年生产环境的测试，我们推荐使用 <a href="https://www.percona.com/software/mysql-database/percona-server">Percona Server</a> 代替原生的 MySQL</p><p>按照<a href="https://www.percona.com/doc/percona-server/5.7/installation/apt_repo.html">官方教程</a> 下载最新版的 .deb 文件</p><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wget https://repo.percona.com/apt/percona-release_0.1-5.<span class="k">$(</span>lsb_release -sc<span class="k">)</span>_all.deb
+</span><span class="s">EOF</span></code></pre></div><p>好了，此时在浏览器输入 <code>http://example.com/phpinfo.php</code> ，如果看到经典的 phpinfo 页面则说明安装成功，如果不成功，请仔细对比步骤查找哪里出错</p><h2 id="4-安装-mysql-5-7-x">4、安装 MySQL 5.7.x</h2><p>经过多年生产环境的测试，我们推荐使用 <a href="https://www.percona.com/software/mysql-database/percona-server">Percona Server</a> 代替原生的 MySQL</p><p>按照<a href="https://www.percona.com/doc/percona-server/5.7/installation/apt_repo.html">官方教程</a> 下载最新版的 .deb 文件</p><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wget https://repo.percona.com/apt/percona-release_0.1-5.<span class="k">$(</span>lsb_release -sc<span class="k">)</span>_all.deb
 sudo dpkg -i percona-release_0.1-5.<span class="k">$(</span>lsb_release -sc<span class="k">)</span>_all.deb</code></pre></div><p>此时会在 <code>/etc/apt/sources.list.d/percona-release.list</code> 文件加入官方源，在安装之前可以先检查是否存在</p><p>更新系统并安装 Percona Server 5.7</p><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get update
-sudo apt-get install percona-server-server-5.7</code></pre></div><p>安装成功后系统会让您输入两次 MySQL 的 root 密码，请切记一定要使用随机的、不可被人猜测的密码</p><p>我亲眼目测过很多新手第一次安装用了弱密码，后来服务器就被人日，所以这里强烈推荐安装完 MySQL 后，执行一次安全设置，很简单的一条命令</p><div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="n">sudo</span> <span class="n">mysql_secure_installation</span></code></pre></div><p>执行后会让您选择密码强度，一般情况下选择 1 或者 2</p><div class="highlight"><pre class="chroma">root@demo:~# mysql_secure_installation
+sudo apt-get install percona-server-server-5.7</code></pre></div><p>安装成功后系统会让您输入两次 MySQL 的 root 密码，请切记一定要使用随机的、不可被人猜测的密码</p><p>我亲眼目测过很多新手第一次安装用了弱密码，后来服务器就被人日，所以这里强烈推荐安装完 MySQL 后，执行一次安全设置，很简单的一条命令</p><div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="n">sudo</span> <span class="n">mysql_secure_installation</span></code></pre></div><p>执行后会让您选择密码强度，一般情况下选择 1 或者 2</p><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">root@ubuntu:~# mysql_secure_installation
 
 Securing the MySQL server deployment.
 
-Enter password for user root: 
+Enter password <span class="k">for</span> user root: 
 
-VALIDATE PASSWORD PLUGIN can be used to test passwords
+VALIDATE PASSWORD PLUGIN can be used to <span class="nb">test</span> passwords
 and improve security. It checks the strength of password
-and allows the users to set only those passwords which are
+and allows the users to <span class="nb">set</span> only those passwords which are
 secure enough. Would you like to setup VALIDATE PASSWORD plugin?
 
-Press y|Y for Yes, any other key for No:y 请输入 y 进行初始安全设置
+Press y<span class="p">|</span>Y <span class="k">for</span> Yes, any other key <span class="k">for</span> No:y 请输入 y 进行初始安全设置
 
 There are three levels of password validation policy:
 
-LOW    Length &amp;gt;= 8
-MEDIUM Length &amp;gt;= 8, numeric, mixed case, and special characters
-STRONG Length &amp;gt;= 8, numeric, mixed case, special characters and dictionary                  file
+LOW    Length &gt;<span class="o">=</span> <span class="m">8</span>
+MEDIUM Length &gt;<span class="o">=</span> <span class="m">8</span>, numeric, mixed <span class="k">case</span>, and special characters
+STRONG Length &gt;<span class="o">=</span> <span class="m">8</span>, numeric, mixed <span class="k">case</span>, special characters and dictionary                  file
 
-Please enter 0 = LOW, 1 = MEDIUM and 2 = STRONG: 2 最强大的密码当然要输入 2
+Please enter <span class="nv">0</span> <span class="o">=</span> LOW, <span class="nv">1</span> <span class="o">=</span> MEDIUM and <span class="nv">2</span> <span class="o">=</span> STRONG: <span class="m">2</span> 最强大的密码当然要输入 <span class="m">2</span>
 
-Using existing password for root.
+Using existing password <span class="k">for</span> root.
 
-Estimated strength of the password: 100
-Change the password for root ? ((Press y|Y for Yes, any other key for No) : n 如果之前设置了强密码，则不需要重新更改 root 密码，反之则按 y 回车后输入两次重置
+Estimated strength of the password: <span class="m">100</span>
+Change the password <span class="k">for</span> root ? <span class="o">((</span>Press y<span class="p">|</span>Y <span class="k">for</span> Yes, any other key <span class="k">for</span> No<span class="o">)</span> : n 如果之前设置了强密码，则不需要重新更改 root 密码，反之则按 y 回车后输入两次重置
 
 By default, a MySQL installation has an anonymous user,
 allowing anyone to log into MySQL without having to have
-a user account created for them. This is intended only for
+a user account created <span class="k">for</span> them. This is intended only <span class="k">for</span>
 testing, and to make the installation go a bit smoother.
 You should remove them before moving into a production
 environment.
 
-Remove anonymous users? (Press y|Y for Yes, any other key for No) : y 移除匿名用户，没啥鸟用就直接移除吧
+Remove anonymous users? <span class="o">(</span>Press y<span class="p">|</span>Y <span class="k">for</span> Yes, any other key <span class="k">for</span> No<span class="o">)</span> : y 移除匿名用户，没啥鸟用就直接移除吧
 
 Normally, root should only be allowed to connect from
-&#39;localhost&#39;. This ensures that someone cannot guess at
+<span class="s1">&#39;localhost&#39;</span>. This ensures that someone cannot guess at
 the root password from the network.
 
-Disallow root login remotely? (Press y|Y for Yes, any other key for No) : y 关闭 root 远程登录，不需要进行远程登录的话就关了吧
+Disallow root login remotely? <span class="o">(</span>Press y<span class="p">|</span>Y <span class="k">for</span> Yes, any other key <span class="k">for</span> No<span class="o">)</span> : y 关闭 root 远程登录，不需要进行远程登录的话就关了吧
 Success.
 
-By default, MySQL comes with a database named &#39;test&#39; that
-anyone can access. This is also intended only for testing,
+By default, MySQL comes with a database named <span class="s1">&#39;test&#39;</span> that
+anyone can access. This is also intended only <span class="k">for</span> testing,
 and should be removed before moving into a production
 environment.
 
-Remove test database and access to it? (Press y|Y for Yes, any other key for No) :y 移除 test 数据库
+Remove <span class="nb">test</span> database and access to it? <span class="o">(</span>Press y<span class="p">|</span>Y <span class="k">for</span> Yes, any other key <span class="k">for</span> No<span class="o">)</span> :y 移除 <span class="nb">test</span> 数据库
 
 Reloading the privilege tables will ensure that all changes
 made so far will take effect immediately.
 
-Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y 重置数据库权限</pre></div><p>再次提醒，密码一定要随机、不可猜测，使用弱密码而导致服务器被日的例子实在是数不清楚</p><p>做好初始安全设置后，我们就可以进行创建数据库操作，首先使用 root 登录 MySQL</p><div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="n">sudo</span> <span class="n">mysql</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span> <span class="o">-</span><span class="n">p</span></code></pre></div><p>会提示让您输入密码，输入密码登陆后，创建一个名为 example 的数据库</p><div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">example</span> <span class="k">DEFAULT</span> <span class="k">CHARACTER</span> <span class="kt">SET</span> <span class="p"></span><span class="n">utf8mb4</span> <span class="k">COLLATE</span> <span class="n">utf8mb4_unicode_ci</span><span class="p">;</span></code></pre></div><p>由于手机端的流行，我们已经不再使用 <code>utf-8</code> 编码，而改用 <code>utf8mb4</code> 这样我们就可以在 MySQL 数据库里储存 emoji 表情了，比如这样 🌚🌚🌚🌚🌚🌚</p><p>接着我们创建一个叫做 <code>example_user</code> 的用户，使用强大的密码并且赋予 <code>example_database</code> 数据库权限</p><div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="k">GRANT</span> <span class="k">ALL</span> <span class="k">ON</span> <span class="n">example</span><span class="p">.</span><span class="o">*</span> <span class="k">TO</span> <span class="sa"></span><span class="s1">&#39;example_user&#39;</span><span class="o">@</span><span class="sa"></span><span class="s1">&#39;localhost&#39;</span> <span class="n">IDENTIFIED</span> <span class="k">BY</span> <span class="sa"></span><span class="s1">&#39;这里改成你要设置的强大的没人能猜出来的随机的密码&#39;</span><span class="p">;</span></code></pre></div><p>终端会提示 <code>Query OK, 0 rows affected, 1 warning (0.00 sec)</code> 不用去管它</p><p>然后我们刷新权限</p><div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="k">FLUSH</span> <span class="n">PRIVILEGES</span><span class="p">;</span></code></pre></div><p>没问题就退出</p><div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="k">EXIT</span><span class="p">;</span></code></pre></div><p>然后我们测试一下数据库，在 <code>/var/www/example.com</code> 目录下建立一个 <a href="https://gist.github.com/chales/11359952">mysql-test.php</a></p><div class="highlight"><pre class="chroma">sudo cat &gt;&gt; /var/www/example.com/mysql-test.php &lt;&lt; EOF  
+Reload privilege tables now? <span class="o">(</span>Press y<span class="p">|</span>Y <span class="k">for</span> Yes, any other key <span class="k">for</span> No<span class="o">)</span> : y 重置数据库权限</code></pre></div><p>再次提醒，密码一定要随机、不可猜测，使用弱密码而导致服务器被日的例子实在是数不清楚</p><p>做好初始安全设置后，我们就可以进行创建数据库操作，首先使用 root 登录 MySQL</p><div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="n">sudo</span> <span class="n">mysql</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span> <span class="o">-</span><span class="n">p</span></code></pre></div><p>会提示让您输入密码，输入密码登陆后，创建一个名为 example 的数据库</p><div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">example</span> <span class="k">DEFAULT</span> <span class="k">CHARACTER</span> <span class="kt">SET</span> <span class="n">utf8mb4</span> <span class="k">COLLATE</span> <span class="n">utf8mb4_unicode_ci</span><span class="p">;</span></code></pre></div><p>由于手机端的流行，我们已经不再使用 <code>utf-8</code> 编码，而改用 <code>utf8mb4</code> 这样我们就可以在 MySQL 数据库里储存 emoji 表情了，比如这样 🌚🌚🌚🌚🌚🌚</p><p>接着我们创建一个叫做 <code>example_user</code> 的用户，使用强大的密码并且赋予 <code>example_database</code> 数据库权限</p><div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="k">GRANT</span> <span class="k">ALL</span> <span class="k">ON</span> <span class="n">example</span><span class="p">.</span><span class="o">*</span> <span class="k">TO</span> <span class="s1">&#39;example_user&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span> <span class="n">IDENTIFIED</span> <span class="k">BY</span> <span class="s1">&#39;这里改成你要设置的强大的没人能猜出来的随机的密码&#39;</span><span class="p">;</span></code></pre></div><p>终端会提示 <code>Query OK, 0 rows affected, 1 warning (0.00 sec)</code> 不用去管它</p><p>然后我们刷新权限</p><div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="k">FLUSH</span> <span class="n">PRIVILEGES</span><span class="p">;</span></code></pre></div><p>没问题就退出</p><div class="highlight"><pre class="chroma"><code class="language-mysql" data-lang="mysql"><span class="k">EXIT</span><span class="p">;</span></code></pre></div><p>然后我们测试一下数据库，在 <code>/var/www/example.com</code> 目录下建立一个 <a href="https://gist.github.com/chales/11359952">mysql-test.php</a></p><div class="highlight"><pre class="chroma">sudo cat &gt;&gt; /var/www/example.com/mysql-test.php &lt;&lt; EOF  
 &lt;?php  
 \$dbname = &#39;example&#39;;    //MySQL 数据库名
 \$dbuser = &#39;example_user&#39;;   //MySQL 用户名

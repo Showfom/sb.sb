@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kernel on 烧饼博客</title>
+    <link>https://sb.sb/tags/kernel/</link>
+    <description>Recent content in Kernel on 烧饼博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <managingEditor>sb@sb.sb (Showfom)</managingEditor>
+    <webMaster>sb@sb.sb (Showfom)</webMaster>
+    <copyright>&amp;copy; Showfom</copyright>
+    <lastBuildDate>Mon, 19 Mar 2018 22:22:23 +0800</lastBuildDate>
+    
+	<atom:link href="https://sb.sb/tags/kernel/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debian / Ubuntu 更新内核并开启 TCP BBR 拥塞控制算法</title>
+      <link>https://sb.sb/blog/debian-ubuntu-tcp-bbr/</link>
+      <pubDate>Mon, 19 Mar 2018 22:22:23 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/debian-ubuntu-tcp-bbr/</guid>
+      <description>BBR (Bottleneck Bandwidth and RTT) 是 Google 提供的 TCP 拥塞控制算法，适用于复杂网络环境下的 TCP 加速。由于众所周知的原因，天朝的网络情况在全世界都排得上号，很多情况下我们不得不进行一些细小的优化才能达到满意的效果。
+话不多说了，首先需要准备的条件
+ Debian 8.x 或者 Debian 9.x 系统，当然以下教程也适合 Ubuntu 14.</description>
+    </item>
+    
+  </channel>
+</rss>

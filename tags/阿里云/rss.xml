@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>阿里云 on 烧饼博客</title>
+    <link>https://sb.sb/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</link>
+    <description>Recent content in 阿里云 on 烧饼博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <managingEditor>sb@sb.sb (Showfom)</managingEditor>
+    <webMaster>sb@sb.sb (Showfom)</webMaster>
+    <copyright>&amp;copy; Showfom</copyright>
+    <lastBuildDate>Mon, 19 Mar 2018 22:01:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://sb.sb/tags/%E9%98%BF%E9%87%8C%E4%BA%91/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>阿里云通过网络安装全新 Debian 9 Stretch</title>
+      <link>https://sb.sb/blog/install-debian-alibabacloud/</link>
+      <pubDate>Mon, 19 Mar 2018 22:01:46 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/install-debian-alibabacloud/</guid>
+      <description>由于众多云主机商家的系统模板总是让人不满意，不是多装了软件就是瞎 JB 写了一些配置，而且 Debian 9.x 都发布一个多月了，国内云主机商能跟上步伐的很少，美团云甚至还停留在 Debian 7.0 时代，而且发了几次工单都没得到任何反应，这是绝对不能忍的
+作为一只有洁癖的人，我决定亲自动手重新安装阿里云和美团云的系统，这里我们以阿里云为例，希望安装的操作系统是最新版本 Debian 9.x Stretch
+1、准备工作和必要条件 准备工作
+ 账号一枚 开通一个云主机并且选择操作系统选择 Debian 8 泡一杯茶静下心，按照我的教程一步一步来  必要条件</description>
+    </item>
+    
+  </channel>
+</rss>

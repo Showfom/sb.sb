@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rutorrent on 烧饼博客</title>
+    <link>https://sb.sb/tags/rutorrent/</link>
+    <description>Recent content in Rutorrent on 烧饼博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <managingEditor>sb@sb.sb (Showfom)</managingEditor>
+    <webMaster>sb@sb.sb (Showfom)</webMaster>
+    <copyright>&amp;copy; Showfom</copyright>
+    <lastBuildDate>Wed, 28 Mar 2018 01:56:33 +0800</lastBuildDate>
+    
+	<atom:link href="https://sb.sb/tags/rutorrent/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debian 9 安装 rTorrent &#43; ruTorrent &#43; Nginx 搭建自己的 PT / BT 盒子</title>
+      <link>https://sb.sb/blog/debian-install-rtorrent-rutorrent-nginx/</link>
+      <pubDate>Wed, 28 Mar 2018 01:56:33 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/debian-install-rtorrent-rutorrent-nginx/</guid>
+      <description>在阅读本文前，请先了解什么是 Private Tracker (简称 PT)
+ Private Tracker，简称 PT，即私用种子服务器。Private Tracker 可以统计用户的上传和下载量，计算用户的分享率。你可以简单将它理解为 BT 的升级版，在拥有 BT 所有功能的同时，需要达到一定的分享率才能不被删除帐号。PT 下载其实也是 BT 下载的一种，但有两个明显的改进：一是私密的小范围下载，二是进行流量统计，根据上载量决定你的权限。
+ 相关介绍请摸这儿、这儿、这儿</description>
+    </item>
+    
+  </channel>
+</rss>

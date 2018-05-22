@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rc.local on 烧饼博客</title>
+    <link>https://sb.sb/tags/rc.local/</link>
+    <description>Recent content in Rc.local on 烧饼博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <managingEditor>sb@sb.sb (Showfom)</managingEditor>
+    <webMaster>sb@sb.sb (Showfom)</webMaster>
+    <copyright>&amp;copy; Showfom</copyright>
+    <lastBuildDate>Mon, 19 Mar 2018 22:03:33 +0800</lastBuildDate>
+    
+	<atom:link href="https://sb.sb/tags/rc.local/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debian 9 Stretch 解决 /etc/rc.local 开机启动问题</title>
+      <link>https://sb.sb/blog/debian-9-rc-local/</link>
+      <pubDate>Mon, 19 Mar 2018 22:03:33 +0800</pubDate>
+      <author>sb@sb.sb (Showfom)</author>
+      <guid>https://sb.sb/blog/debian-9-rc-local/</guid>
+      <description>由于某些软件并没有增加开启启动的服务，很多时候需要手工添加，一般我们都是推荐添加命令到 /etc/rc.local 文件，但是 Debian 9 默认不带 /etc/rc.local 文件，而 rc.local 服务却还是自带的
+root@debian9 ~ # cat /lib/systemd/system/rc.local.service # This file is part of systemd.</description>
+    </item>
+    
+  </channel>
+</rss>
