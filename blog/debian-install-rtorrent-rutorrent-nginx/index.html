@@ -19,13 +19,14 @@ sudo cat &gt;&gt; /etc/apt/sources.list.d/nginx.list <span class="s">&lt;&lt; EO
 </span><span class="s">EOF</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">apt-get update
 apt-get install nginx-extras -y</code></pre></div><p>接着进入 <code>/var/www</code> 目录</p><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /var/www</code></pre></div><p>使用 <code>git</code> 和 <code>svn</code> 命令把 ruTorrent 和所有的插件都拖回来</p><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git clone https://github.com/Novik/ruTorrent.git rutorrent
 rm -r rutorrent/plugins
-svn checkout https://github.com/Novik/ruTorrent/trunk/plugins rutorrent/plugins</code></pre></div><p>然后我们可以查看 <code>/var/www/rutorrent/conf/config.php</code> 文件，在大概 42 行的位置，需要你手工填写程序的 path</p><div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">$pathToExternals = array(
-    &#34;php&#34; =&gt; &#39;&#39;,
-    &#34;curl&#34; =&gt; &#39;&#39;,
-    &#34;gzip&#34; =&gt; &#39;&#39;,
-    &#34;id&#34; =&gt; &#39;&#39;,
-    &#34;stat&#34; =&gt; &#39;&#39;,
-);</code></pre></div><p>我们可以在系统里使用 <code>which</code> 命令查看文件所在的路径</p><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">root@debian ~ <span class="c1"># which php curl gzip id stat sox
+svn checkout https://github.com/Novik/ruTorrent/trunk/plugins rutorrent/plugins</code></pre></div><p>然后我们可以查看 <code>/var/www/rutorrent/conf/config.php</code> 文件，在大概 42 行的位置，需要你手工填写程序的 path</p><div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php"><span class="x">$pathToExternals = array(
+</span><span class="x">    &#34;php&#34; =&gt; &#39;&#39;,
+</span><span class="x">    &#34;curl&#34; =&gt; &#39;&#39;,
+</span><span class="x">    &#34;gzip&#34; =&gt; &#39;&#39;,
+</span><span class="x">    &#34;id&#34; =&gt; &#39;&#39;,
+</span><span class="x">    &#34;stat&#34; =&gt; &#39;&#39;,
+</span><span class="x">);
+</span><span class="x"></span></code></pre></div><p>我们可以在系统里使用 <code>which</code> 命令查看文件所在的路径</p><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">root@debian ~ <span class="c1"># which php curl gzip id stat sox
 </span><span class="c1"></span>/usr/bin/php
 /usr/bin/curl
 /bin/gzip
@@ -37,7 +38,9 @@ svn checkout https://github.com/Novik/ruTorrent/trunk/plugins rutorrent/plugins<
     <span class="s2">&#34;gzip&#34;</span> <span class="o">=</span>&gt; <span class="s1">&#39;/bin/gzip&#39;</span>,
     <span class="s2">&#34;id&#34;</span> <span class="o">=</span>&gt; <span class="s1">&#39;/usr/bin/id&#39;</span>,
     <span class="s2">&#34;stat&#34;</span> <span class="o">=</span>&gt; <span class="s1">&#39;/usr/bin/stat&#39;</span>,
-<span class="o">)</span><span class="p">;</span></code></pre></div><p>再修改 <code>$topDirectory</code> 为你下载资源的目录</p><div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">$topDirectory = &#39;/home/downloads/&#39;;</code></pre></div><p>修改 <code>/var/www/rutorrent/plugins/spectrogram/conf.php</code> 文件，增加 sox（一款管理音频的软件） 的路径</p><div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php">$pathToExternals[&#39;sox&#39;] = &#39;/usr/bin/sox&#39;;</code></pre></div><p>然后我们修改 <code>/var/www/rutorrent/conf/plugins.ini</code> 文件，把我们需要的插件加上去</p><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">rm -f /var/www/rutorrent/conf/plugins.ini
+<span class="o">)</span><span class="p">;</span></code></pre></div><p>再修改 <code>$topDirectory</code> 为你下载资源的目录</p><div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php"><span class="x">$topDirectory = &#39;/home/downloads/&#39;;
+</span><span class="x"></span></code></pre></div><p>修改 <code>/var/www/rutorrent/plugins/spectrogram/conf.php</code> 文件，增加 sox（一款管理音频的软件） 的路径</p><div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php"><span class="x">$pathToExternals[&#39;sox&#39;] = &#39;/usr/bin/sox&#39;;
+</span><span class="x"></span></code></pre></div><p>然后我们修改 <code>/var/www/rutorrent/conf/plugins.ini</code> 文件，把我们需要的插件加上去</p><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">rm -f /var/www/rutorrent/conf/plugins.ini
 nano /var/www/rutorrent/conf/plugins.ini</code></pre></div><p>可以参考我使用的 <code>plugins.ini</code></p><p></p><div id="gist-5aba7af499dbb-8910ca1771f98d687402e91d6ea7f74bc112d3bd" class="gist-container"></div><script src="https://paste.to/en/embedjs/5aba7af499dbb" async></script><p></p><p>更多的插件可以参考 <a href="https://github.com/Novik/ruTorrent/wiki/Plugins">Github</a></p><p>最后我们设置 <code>/var/www/rutorrent</code> 目录的用户组和权限，因为 Nginx 和 PHP 默认是用 <code>www-data</code> 用户运行，这个用户在 Debian 9 下编号 33 所以直接运行</p><div class="highlight"><pre class="chroma">chown -R 33:33 /var/www/rutorrent -R
 chmod -R 755 /var/www/rutorrent</pre></div><p>即可更改权限</p><p>最后增加一个 Nginx 配置文件</p><div class="highlight"><pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">server</span> <span class="p">{</span>
 	<span class="kn">listen</span> <span class="mi">8080</span><span class="p">;</span>
